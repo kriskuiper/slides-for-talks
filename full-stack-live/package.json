@@ -7,9 +7,13 @@
   },
   "dependencies": {
     "@slidev/cli": "^0.30.0",
+    "@slidev/theme-apple-basic": "^0.20.0",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*",
     "slidev-theme-geist": "^0.8.1"
   },
-  "name": "full-stack-live"
+  "name": "full-stack-live",
+  "devDependencies": {
+    "@iconify-json/logos": "^1.1.5"
+  }
 }
