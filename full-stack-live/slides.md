@@ -103,7 +103,7 @@ Zodat je het op elk project kan gebruiken
 
 ---
 layout: intro-image-right
-image: /images/kris-pf.jpeg
+image: /images/ikea-billy.jpg
 ---
 # De onderdelen van een component library
 - De componenten in code (Vue/React etc.)
@@ -235,7 +235,6 @@ layout: quote
 - Schrijf je tests met de gebruiker in het achterhoofd, focus je dus niet teveel op implementatie details maar op wat een gebruiker hoort te zien
 - Normaliseer zoveel mogelijk in constants wanneer je bijv. props validatie hebt zodat je dit indien nodig weer in je test kan gebruiken
 
-
 ---
 
 ```js {1-7|9|11}
@@ -262,7 +261,7 @@ image: /images/storybook.png
 layout: quote
 ---
 
-```js{2,5,7,10,12,15}
+```js {2,5,7,10,12,15}
 // ..
 it('can contain multiple child elements', () => {
   expect(wrapper).toContainChildElement('.first-child')
@@ -326,7 +325,7 @@ export default {
 
 ---
 layout: intro-image-right
-image: /images/ikea-billy.jpg
+image: /images/component-library-little-view.png
 ---
 
 # De meerwaarde in je tech stack
@@ -386,3 +385,79 @@ image: /images/volkswagen-group.png
 
 # Eén library met base componenten
 - Kale UX van componenten is vaak hetzelfde, ongeacht de vormgeving
+
+<v-click>
+
+- Vormgeving kan je achteraf bepalen, standaard UX out-of-the-box
+
+</v-click>
+
+<v-click>
+
+- Voorbeeld: een Dialog/Pop-up/Modal
+
+</v-click>
+
+---
+
+<video src="/videos/logiq-video.mov" controls></video>
+
+---
+
+# Idealiter is een component in delen beschikbaar
+
+```js
+export {
+  DialogRoot,
+  DialogContent,
+  DialogTrigger,
+  DialogCloseButton,
+}
+```
+
+<v-click>
+
+- Vergemakkelijkt flexibiliteit van layout
+
+</v-click>
+
+---
+
+# Recap
+<v-click>
+
+- Breek je front-end(s) op in kleinere stukken/componenten
+- Agency? Strip zoveel mogelijk vormgeving eruit
+
+</v-click>
+
+<v-click>
+
+- Stop ze in een losse component library die op NPM staat
+```js
+import { MyComponent } from 'my-component-library'
+```
+
+</v-click>
+
+<v-click>
+
+- Profit! 💸
+
+</v-click>
+
+---
+layout: section
+---
+
+# Joejoe! 👋
+
+🖥️ [kris-kuiper.nl](https://www.kris-kuiper.nl)
+
+🦸 [careers.loavies.com](https://careers.loavies.com/)
+
+🛍️ [LOAVIES component library](https://loavies-component-library.herokuapp.com/)
+
+🧱 [Logiq component library source code](https://github.com/kriskuiper/graduation-project)
+
+---
