@@ -400,7 +400,7 @@ image: /images/volkswagen-group.png
 
 ---
 
-<video src="/videos/logiq-video.mov" controls></video>
+<video src="/videos/logiq-video.mp4" controls></video>
 
 ---
 
