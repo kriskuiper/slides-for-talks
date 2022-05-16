@@ -356,7 +356,7 @@ layout: section
 
 ---
 layout: image
-image: /images/volkswagen-group.png
+image: /images/volkswagen-logo.jpeg
 ---
 
 ---
