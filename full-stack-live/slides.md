@@ -16,7 +16,7 @@ layout: intro
 
 Why you should too
 
-<span class="text-sm">Component-driven development in Vue en/of React</span>
+<span class="text-sm">Component-driven development op het web</span>
 
 <footer class="absolute bottom-12">
   <span class="text-sm font-300 flex items-center">🛍️ loavies.com/nl</span>
@@ -43,10 +43,9 @@ layout: quote
 
 # Waar deze talk over gaat
 - Wat een component library is
-- Hoe je het kan implementeren
+- Hoe je het kan gebruiken
 - Waarom het een meerwaarde kan vormen binnen je tech stack
-- Hoe je als agency een component-library kan adopteren
-- Learnings, zodat jij niet dezelfde fuck-ups hoeft te maken
+- Hoe je als agency een component-library kan implementeren
 
 <footer class="absolute bottom-12">
   <span class="text-sm font-300 flex items-center">🛍️ loavies.com/nl</span>
@@ -59,7 +58,7 @@ layout: quote
 
 # Deze talk is NIET
 - Een vergelijk tussen Vue en React
-- Alleen maar gericht is op JavaScript frameworks
+- Iets wat alleen maar is gericht op JavaScript frameworks
 - Een dwingend praatje over dat je een component library **moet** gebruiken
 
 <footer class="absolute bottom-12">
@@ -83,7 +82,7 @@ Zo ja, welke dan?
 layout: quote
 ---
 # Het start allemaal met een design system
-Of een bestaande site / bestaande sites
+Vanuit een bestaande site / bestaande sites
 
 <footer class="absolute bottom-12">
   <span class="text-sm font-300 flex items-center">🛍️ loavies.com/nl</span>
@@ -258,11 +257,9 @@ image: /images/storybook.png
 ---
 
 ---
-layout: quote
----
 
-```js {2,5,7,10,12,15}
-// ..
+```js {1,2,5,7,10,12,15}
+// app-swiper.test.js
 it('can contain multiple child elements', () => {
   expect(wrapper).toContainChildElement('.first-child')
   expect(wrapper).toContainChildElement('.second-child')
@@ -277,7 +274,36 @@ it('first dot has active styling by default', () => {
   const firstPaginationItem = wrapper.find('.app-swiper__pagination-item:first-child')
   expect(firstPaginationItem).toContainClassName('app-swiper__pagination-item--active')
 })
-// ..
+```
+
+---
+
+```js
+// app-label.constants.js
+export const positions = {
+  LEFT: 'left',
+  RIGHT: 'right',
+}
+
+// app-label.vue
+import { positions } from './app-label.constants'
+
+props: {
+  stickTo: {
+    type: String,
+    default: '',
+    validator(value) {
+      return !value || Object.values(positions).includes(value)
+    }
+  }
+}
+
+// app-label.test.js
+import { positions } from './app-label.constants'
+
+it('can stick to sides', () => {
+  // Loop over Object.values(positions) and check if it can stick to sides
+})
 ```
 
 ---
