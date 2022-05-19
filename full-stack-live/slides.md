@@ -453,16 +453,22 @@ export {
 <v-click>
 
 - Breek je front-end(s) op in kleinere stukken/componenten
-- Agency? Strip zoveel mogelijk vormgeving eruit
+- Agency? Strip zoveel mogelijk vormgeving eruit, pas het per project toe
 
 </v-click>
 
 <v-click>
 
-- Stop ze in een losse component library die op NPM staat
+- Stop ze in een losse component library die op NPM o.i.d. staat
 ```js
 import { MyComponent } from 'my-component-library'
 ```
+
+</v-click>
+
+<v-click>
+
+- Test op gebruikersinteractie in plaats van implementatiedetails
 
 </v-click>
 
