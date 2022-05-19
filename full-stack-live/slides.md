@@ -136,6 +136,11 @@ layout: image
 image: /images/componenten-voorbeeld.png
 ---
 
+<!--
+Onderdelen in de UI zijn opgesplitst.
+Elk van de geselecteerde dingen zou een component kunnen zijn.
+-->
+
 ---
 layout: quote
 ---
@@ -237,7 +242,7 @@ layout: quote
 ---
 
 ```js {1-7|9|11}
-// beforeEach, mounten van component etc.
+// app-accordion.test.js
 it('shows details after clicking on summary', async () => {
   const button = wrapper.find('button')
 
@@ -380,17 +385,27 @@ layout: section
 
 # Hoe kan je dit toepassen als agency?
 
+<!--
+Aangezien ik in-house werk bij LOAVIES heb ik best makkelijk praten. Alles wat we bouwen heeft dezelfde look en feel.
+Bij een agency heb je echter natuurlijk allerlei verschillende projecten met elk hun eigen vormgeving. Toch kan je
+ook dan een component library gebruiken, alleen moet je het iets anders aanvliegen.
+-->
+
 ---
 layout: image
 image: /images/volkswagen-logo.jpeg
 ---
+
+<!--
+Denk hierbij aan hoe de Volkswagen Group in elkaar zit met hun verschillende merken
+-->
 
 ---
 
 # Eén base platform, meerdere merken / modellen
 <v-click>
 
-- De Volkswagen Golf, Seat Leon, Audi A3 en Škoda Octavia
+- De Volkswagen Golf, Seat Leon, Audi A3 en Škoda Octavia zijn in de basis dezelfde auto's
 
 </v-click>
 
@@ -403,7 +418,7 @@ image: /images/volkswagen-logo.jpeg
 
 <v-click>
 
-- Ze zijn namelijk gebouwd op hetzelfde (MQB 🤓) platform
+- Ze zijn namelijk gebouwd op basis van hetzelfde (MQB 🤓) platform
 
 </v-click>
 
@@ -414,7 +429,7 @@ image: /images/volkswagen-logo.jpeg
 
 <v-click>
 
-- Vormgeving kan je achteraf bepalen, standaard UX out-of-the-box
+- Vormgeving kan je achteraf bepalen, standaard UX en accessibility out-of-the-box
 
 </v-click>
 
