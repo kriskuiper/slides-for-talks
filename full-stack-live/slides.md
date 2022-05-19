@@ -124,7 +124,7 @@ image: 'https://media.giphy.com/media/4JVTF9zR9BicshFAb7/giphy.gif'
 - De anatomie van de library en een component
 - Omgaan met vormgeving en CSS
 - Testing tips
-- Gebruik en distributie van je library
+- Distributie en gebruik van je library
 
 ---
 layout: image
